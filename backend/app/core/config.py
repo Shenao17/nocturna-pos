@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     # Base de datos
     DB_HOST: str = "localhost"
     DB_PORT: int = 3306
-    DB_USER: str = "nocturna"
+    DB_USER: str = "root"
     DB_PASSWORD: str = "Orvex#Admin2026!"
     DB_NAME: str = "nocturna_pos"
 
