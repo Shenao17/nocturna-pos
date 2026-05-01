@@ -1,8 +1,9 @@
-import { BarChart2, Settings } from 'lucide-react'
+import { Settings } from 'lucide-react'
 export { default as POSPage }       from './POSPage'
 export { default as InventoryPage } from './InventoryPage'
 export { default as ClientsPage }   from './ClientsPage'
 export { default as CashPage }      from './CashPage'
+export { default as ReportsPage }   from './ReportsPage'
 
 function PlaceholderPage({ icon: Icon, title, description }) {
   return (
@@ -14,12 +15,11 @@ function PlaceholderPage({ icon: Icon, title, description }) {
         <div className="empty-state">
           <Icon className="empty-state-icon" />
           <h3>{title}</h3>
-          <p>Módulo en construcción — próximas fases</p>
+          <p>Módulo en construcción — próxima fase</p>
         </div>
       </div>
     </div>
   )
 }
 
-export const ReportsPage = () => <PlaceholderPage icon={BarChart2} title="Reportes"  description="Estadísticas y análisis" />
-export const UsersPage   = () => <PlaceholderPage icon={Settings}  title="Usuarios"  description="Gestión de usuarios y roles" />
+export const UsersPage = () => <PlaceholderPage icon={Settings} title="Usuarios" description="Gestión de usuarios y roles" />
