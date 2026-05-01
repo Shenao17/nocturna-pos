@@ -1,5 +1,5 @@
-// Placeholders — se reemplazarán en fases 10-15
-import { ShoppingCart, Package, Users, BarChart2, Landmark, Settings } from 'lucide-react'
+import { ShoppingCart, Users, BarChart2, Landmark, Settings } from 'lucide-react'
+export { default as InventoryPage } from './InventoryPage'
 
 function PlaceholderPage({ icon: Icon, title, description }) {
   return (
@@ -21,21 +21,8 @@ function PlaceholderPage({ icon: Icon, title, description }) {
   )
 }
 
-export const POSPage = () => (
-  <PlaceholderPage icon={ShoppingCart} title="Ventas / Caja" description="Módulo principal de ventas" />
-)
-export const InventoryPage = () => (
-  <PlaceholderPage icon={Package} title="Inventario" description="Gestión de productos y stock" />
-)
-export const ClientsPage = () => (
-  <PlaceholderPage icon={Users} title="Clientes" description="Base de clientes y fidelización" />
-)
-export const ReportsPage = () => (
-  <PlaceholderPage icon={BarChart2} title="Reportes" description="Estadísticas y análisis" />
-)
-export const CashPage = () => (
-  <PlaceholderPage icon={Landmark} title="Caja / Turnos" description="Apertura y cierre de caja" />
-)
-export const UsersPage = () => (
-  <PlaceholderPage icon={Settings} title="Usuarios" description="Gestión de usuarios y roles" />
-)
+export const POSPage      = () => <PlaceholderPage icon={ShoppingCart} title="Ventas / Caja"    description="Módulo principal de ventas" />
+export const ClientsPage  = () => <PlaceholderPage icon={Users}        title="Clientes"         description="Base de clientes y fidelización" />
+export const ReportsPage  = () => <PlaceholderPage icon={BarChart2}    title="Reportes"         description="Estadísticas y análisis" />
+export const CashPage     = () => <PlaceholderPage icon={Landmark}     title="Caja / Turnos"    description="Apertura y cierre de caja" />
+export const UsersPage    = () => <PlaceholderPage icon={Settings}     title="Usuarios"         description="Gestión de usuarios y roles" />
